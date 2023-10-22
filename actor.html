@@ -4,6 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Actor Page</title>
+        <link rel="stylesheet" href="css/movie_style.css">
     </head>
 
     <body>
@@ -20,57 +21,111 @@
             <li><a href="genres.html">Genres</a></li>
         </ul>
 
-        <h1>Tom Cruise</h1>
-        <h3>Actor</h3>
-        <h3>DOB: July 3, 1962 </h3>
+        <div class="actor-container">
 
-        <!-- Image container -->
-        <div class="poster-container" style="margin-right: 20px;">
-            <img src="src/actors/tomcruise.jpg" alt="Top Gun Poster" style="width: 200px;">
-        </div>
+            <div class="image-container">
 
-        <!-- Synopsis container -->
-        <div class="synopsis-container">
-            <h2>Biographry</h2>
-            <p>
-                Thomas Cruise Mapother IV is an American actor. One of the world's highest-paid actors, he has received various accolades, 
-                including an Honorary Palme d'Or and three Golden Globe Awards, in addition to nominations for four Academy Awards
-            </p>
-        </div>
+                <!-- Image -->
+                <img src="src/actors/tomcruise.jpg" alt="Top Gun Poster">
 
-        <div class="films">
-            <h2>Filmography</h2>
-                <div class="movie-card">
-                    <a href="movie.html">
-                        <img src="src/images/pulp.jpeg" alt="Pulp Fiction Poster" width="200" height="300">
-                        <h3>Pulp Fiction</h3>
-                    </a>
-                    <h3>
-                        Directed by: <span class="movie-detail"> <a href="director.html">Quentin Tarentino</a></span>
-                    </h3>
+                <div class="known-for"><h2>Actor</h2></div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="name">
+                    Tom Cruise
                 </div>
 
-                <div class="movie-card">
-                    <a href="movie.html">
-                        <img src="src/images/starwars.jpeg" alt="Star Wars Poster" width="200" height="300">
-                        <h3>Star Wars</h3>
-                    </a>
-                    <h3>
-                        Directed by: <span class="movie-detail"> <a href="director.html">George Lucas</a></span>
-                    </h3>
+                <div class="biography">
+                    Thomas Cruise Mapother IV is an American actor. One of the world's highest-paid actors, he has received various accolades, 
+                    including an Honorary Palme d'Or and three Golden Globe Awards, in addition to nominations for four Academy Awards
+
+                    Thomas Cruise Mapother IV is an American actor. One of the world's highest-paid actors, he has received various accolades, 
+                    including an Honorary Palme d'Or and three Golden Globe Awards, in addition to nominations for four Academy Awards
                 </div>
+
+                <h4>Known For</h4>
+
+                <div class="movies">
+
+                    <div class="movie-card">
+                        <div class="image-container">
+                            <a href="movie.html">
+                                <img src="src/images/spiderverse.jpeg" alt="SpiderVerse Poster">
+                            </a>
+                        </div>
+                        <div class="info-container">
+                            <div class="movie-name">SpiderVerse</div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="image-container">
+                            <a href="movie.html">
+                                <img src="src/images/flash.webp" alt="The Flash Poster">
+                            </a>
+                        </div>
+                        <div class="info-container">
+                            <div class="movie-name">The Flash</div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="image-container">
+                            <a href="movie.html">
+                                <img src="src/images/pulp.jpeg" alt="Pulp Fiction Poster">
+                            </a>
+                        </div>
+                        <div class="info-container">
+                            <div class="movie-name">Pulp Fiction</div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="image-container">
+                            <a href="movie.html">
+                                <img src="src/images/topgun.png" alt="Top Gun Poster">
+                            </a>
+                        </div>
+                        <div class="info-container">
+                            <div class="movie-name">Top Gun</div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="image-container">
+                            <a href="movie.html">
+                                <img src="src/images/her.jpeg" alt="Her Poster">
+                            </a>
+                        </div>
+                        <div class="info-container">
+                            <div class="movie-name">Her</div>
+                        </div>
+                    </div>
+
+                </div>
+        
+            </div>
+
+
         </div>
 
+        <br>
+
+        <h1>Photos</h1>
         <div class="stills">
-            <h1>Photos</h1>
             <img src="src/images/stills/1.jpeg" width="700" height="400" alt="Actor Still 1">
             <img src="src/images/stills/2.webp" width="700" height="400" alt="Actor Gun Still 2">
             <img src="src/images/stills/3.jpg" width="700" height="400" alt="Actor Gun Still 3">
             <img src="src/images/stills/3.jpg" width="700" height="400" alt="Actor Gun Still 4">
         </div>
 
+        <br>
+
+        <h2>Trivia</h2>
         <div class="trivia">
-            <h1>Trivia</h1>
             <ul>
                 <li>Tom Cruise met with Ridley Scott to see if he would be interested in directing this movie, as his brother, Tony Scott, 
                     had directed the original film. Scott, who had previously directed Cruise in Legend (1985), politely declined. 
@@ -87,6 +142,7 @@
                 </li>
             </ul>
         </div>
+
     </body>
 
     <footer>

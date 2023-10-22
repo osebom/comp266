@@ -1,0 +1,408 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+}
+
+ul.nav {
+    background-image: linear-gradient(rgb(155, 96, 176), rgb(84, 53, 199));
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background-color: #04AA6D;
+}
+
+.trailer {
+    width: 100%; /* Container takes full width of its parent */
+}
+
+.trailer video {
+    width: 100%; /* Video takes full width of the container */
+    height: 400px; /* Fixed height for the video */
+    object-fit: cover; /* Ensures video covers the width without distortion */
+}
+
+.poster {
+    width: 200px;
+    height: 300px;
+}
+
+.cast {
+    display: flex;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card{
+    background-color: #282c34;
+    height: 260px;
+    width: 150px;
+    border-radius: 10px;
+    justify-content: center;
+    /*Spaces the cards out horizontally*/
+    margin: 0 10px;
+}
+
+.card img{
+    width: 150px;
+    height: 200px;
+    top: 2px;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+.intro-card {
+    display: flex; /* Use Flexbox for the layout */
+    align-items: start; /* Align items to the start of the cross axis */
+    gap: 20px; /* Space between the image and the synopsis container */
+}
+
+.intro-card img{
+    display: flex; /* Use Flexbox for the layout */
+    align-items: start; /* Align items to the start of the cross axis */
+    gap: 20px; /* Space between the image and the synopsis container */
+    background-color: rgb(80, 76, 76);
+    border-radius: 10px;
+}
+
+.synopsis-container {
+    max-width: 60%; /* Adjust as needed */
+    color: white;
+    size: 300px;
+}
+
+.synopsis-container p {
+    font-size: 20px;
+}
+
+h2{
+    color: white;
+}
+
+table{
+    background-color: rgb(255, 255, 255);
+}
+
+.crew-container {
+    background-color: #282c34;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.crew-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+    color: white;
+}
+
+.crew-item a{
+    text-decoration:none;
+    color: white;
+}
+
+.crew-item:last-child {
+    border-bottom: none;
+}
+
+.crew-label {
+    font-weight: bold;
+}
+
+.crew-name {
+    color: #ffffff;
+}
+
+.stills {
+    background-color: #282c34;
+    border-radius: 8px;
+    /*width: 300px;*/
+    padding: 5px;
+}
+
+.stills img{
+    width: 600px;
+    height: 300px;
+}
+
+.trivia {
+    width: 70%;
+    color: #000000;
+}
+
+.trivia li{
+    background-color: #282c34;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+
+/*Recimmendations*/
+.recommendation {
+    display: flex;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.movie-card {
+    width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.info-container {
+    background-color: #282c34;
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-name,
+.director-name {
+    margin: 5px 0;
+    color:#ffffff;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 10px 0;
+}
+
+.actors {
+    display: flex;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.directors {
+    display: flex;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.sort-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #282c34;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color:  rgb(80, 76, 76);
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.sort-button {
+    margin-top: 20px;
+}
+
+.sort-container button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+
+/*Genre Page*/
+.genres-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.genre-card {
+    /*background-color: linear-gradient(rgb(88, 244, 130), rgb(17, 212, 219));*/
+    text-decoration:none;
+    height: 240px;
+    width: 240px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth transformation */
+    justify-content: center; /* Horizontally center the content */
+    /*Spaces the cards out horizontally*/
+    margin: 0 10px;
+    display: flex;
+    align-items: center;      /* Vertically center the content */
+    text-align: center;   
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: cover;  /* Make sure the image covers the entire element */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Ensure the image doesn't repeat */
+    background-color: rgba(192, 44, 44, 0.5);
+}
+
+.genre-card a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Hover effect for movie card to slightly lift */
+.genre-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Actor Profile Page */
+.actor-container {
+    width: 70%;
+    display: flex;
+    /*background-color: #43468d;*/
+    padding: 10px;
+    border-radius: 10px;
+    color:#ddd;
+    margin:auto;
+}
+
+.image-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.image-container img {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+.info {
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.movies {
+    display: flex;
+    /*gap: 10px;*/
+    /*width: 80%;*/
+    flex-wrap: wrap;
+}
+
+
+
+/* Actor Info Page */
+
+/* Targeting the movie-card specifically within movies class */
+.movies > .movie-card {
+    /* Styles for the movie card */
+    width: 140px;
+    /*height: 240px;*/
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth transformation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Hover effect for movie card to slightly lift */
+.movies > .movie-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Targeting the image container inside the movie-card of movies class */
+.movies > .movie-card > .image-container {
+    /* Styles for the image container */
+    height: 250px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.movies > .movie-card > .image-container > a > img {
+    /* Styles for the image itself */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Targeting the info container inside the movie-card of movies class */
+.movies > .movie-card > .info-container {
+    /* Styles for the info container */
+    background-color: #576370; /* Blue background */
+    padding: 10px 0; /* Space above and below movie name */
+    text-align: center; /* Center the text */
+    font-size: 18px; /* Font size of the movie name */
+    color: #ffffff; /* White text color */
+}
+
+.movies > .movie-card > .info-container > .movie-name {
+    /* Styles for the movie name */
+    font-weight: bold;
+    font-size: 15px;
+}
+
+footer{
+    color:rgb(189, 189, 189)
+}

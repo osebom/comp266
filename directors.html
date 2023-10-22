@@ -4,14 +4,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Directors Page</title>
+        <link rel="stylesheet" href="css/movie_style.css">
     </head>
 
     <body>
 
-        <form id="form"> 
-            <input type="search" id="query" name="q" placeholder="Search...">
-            <button>Search</button>
-        </form>
+        <div class ="search-container">
+            <form id="form"> 
+                <input type="search" id="query" name="q" placeholder="Search...">
+                <button>Search</button>
+            </form>
+        </div>
 
         <ul class="nav">
             <li><a href="homepage.html">Home</a></li>
@@ -22,34 +25,39 @@
 
         <h1>Directors</h1>
 
-        <form id="form"> 
-            <input type="search" id="query" name="q" placeholder="Search for directors...">
-            <button>Search</button>
-        </form>
-
-        <h3>Filters</h3>
-
         <!-- Control buttons -->
-        <div id="myBtnContainer">
-            <button class="btn"> Alphabetical</button>
-            <button class="btn">Popularity</button>
+        <div class="sort-container">
+            <h2>Sort</h2>
+            <div class="sort-button">
+                <button>Alphabetically</button>
+            </div>
+            <div class="sort-button">
+                <button>By Popularity</button>
+            </div>
         </div>
 
         <div class="directors">
-            <div class="cast-card">
-                <img src="src/actors/joe.jpeg" alt="Joseph Kosinski Image" style="width: 100px;">
-                <h3><a href="director.html">Joseph Kosinski</a></h3>
+            <div class="card">
+                <a href="director.html">
+                    <img class="actor" src="src/actors/joe.jpeg" alt="Joseph Kosinski Image">
+                    <h3>Joseph Kosinski</h3>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a href="director.html">
+                    <img class="actor" src="src/actors/stephenking.webp" alt="Stephen King Image" >
+                    <h3>Stephen King</h3>
+                </a>
             </div>
 
-            <div class="cast-card">
-                <img src="src/actors/stephenking.webp" alt="Stephen King Image" style="width: 100px;">
-                <h3><span><a href="director.html">Stephen King</a></h3>
+            <div class="card">
+                <a href="director.html">
+                    <img class="actor" src="src/actors/spikelee.webp" alt="Spike Lee Image" >
+                    <h3>Spike Lee</h3>
+                </a>
             </div>
 
-            <div class="cast-card">
-                <img src="src/actors/spikelee.webp" alt="Spike Lee Image" style="width: 100px;">
-                <h3><a href="director.html">Spike Lee</a></h3>
-            </div>
         </div>
 
     </body>

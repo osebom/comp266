@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Movie Page</title>
+        <link rel="stylesheet" href="css/movie_style.css">
     </head>
 
     <body>
 
-        <form id="form"> 
-            <input type="search" id="query" name="q" placeholder="Search...">
-            <button>Search</button>
-        </form>
+        <div class ="search-container">
+            <form id="form"> 
+                <input type="search" id="query" name="q" placeholder="Search...">
+                <button>Search</button>
+            </form>
+        </div>
 
         <ul class="nav">
             <li><a href="homepage.html">Home</a></li>
@@ -20,67 +23,71 @@
             <li><a href="genres.html">Genres</a></li>
         </ul>
 
-        <h1>Top Gun</h1>
-
-        <!-- Image container -->
-        <div class="poster-container" style="margin-right: 20px;">
+        <div class="intro-card">
             <img src="src/images/topgun.png" alt="Top Gun Poster" style="width: 200px;">
+
+            <!-- Synopsis container -->
+            <div class="synopsis-container">
+                <h1>Top Gun</h1>
+                <h2>Synopsis</h2>
+                <p>
+                    The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills. When hotshot fighter pilot Maverick (Tom Cruise) is sent to the school, his reckless attitude and cocky demeanor put him at odds with the other pilots, especially the cool and collected Iceman (Val Kilmer). But Maverick isn't only competing to be the top fighter pilot, he's also fighting for the attention of his beautiful flight instructor, Charlotte Blackwood (Kelly McGillis).
+                </p>
+            </div>
         </div>
 
-        <!-- Synopsis container -->
-        <div class="synopsis-container">
-            <h2>Synopsis</h2>
-            <p>
-                The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills. When hotshot fighter pilot Maverick (Tom Cruise) is sent to the school, his reckless attitude and cocky demeanor put him at odds with the other pilots, especially the cool and collected Iceman (Val Kilmer). But Maverick isn't only competing to be the top fighter pilot, he's also fighting for the attention of his beautiful flight instructor, Charlotte Blackwood (Kelly McGillis).
-            </p>
-        </div>
+        <h2>Cast</h2>
 
         <div class="cast">
-            <h2>Cast</h2>
-                <div class="card">
-                    <a href="actor.html">
-                        <img src="src/actors/tomcruise.jpg" alt="Tom Cruise Poster" style="width: 100px;">
-                        <h3>Tom Cruise</h3>
-                    </a>
-                </div>
 
-                <div class="card">
-                    <a href="">
-                        <img class="actor" src="src/actors/milesteller.jpg" width="100" height="100" alt="Miles Teller Image"/>
-                        <h3>Miles Teller</h3>
-                    </a>
-                </div>
+            <div class="card">
+                <a href="actor.html">
+                    <img class="actor" src="src/actors/tomcruise.jpg" alt="Tom Cruise Poster">
+                    <h3>Tom Cruise</h3>
+                </a>
+            </div>
 
-                <div class="card">
-                    <a href="">
-                        <img class="actor" src="src/actors/valkilmer.jpg" width="100" height="100" alt="Val Kilmer Image"/>
-                        <h3>Val Kilmer</h3>
-                    </a>
-                </div>
+            <div class="card">
+                <a href="">
+                    <img class="actor" src="src/actors/milesteller.jpg" alt="Miles Teller Image"/>
+                    <h3>Miles Teller</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img class="actor" src="src/actors/valkilmer.jpg" alt="Val Kilmer Image"/>
+                    <h3>Val Kilmer</h3>
+                </a>
+            </div>
+
         </div>
 
         <h2>Crew</h2>
-        <table>
-            <tr>
-                <td>Director</td>
-                <td><span><a href="director.html">Joseph Kosinski</a></span></td>
-            </tr>
-            <tr>
-                <td>Writers</td>
-                <td>Peter Craig</td>
-            </tr>
-        </table>
 
-        <div class="stills">
-            <h1>Stills</h1>
-            <img src="src/images/stills/1.jpeg" width="700" height="400" alt="Top Gun Still 1">
-            <img src="src/images/stills/2.webp" width="700" height="400" alt="Top Gun Still 2">
-            <img src="src/images/stills/3.jpg" width="700" height="400" alt="Top Gun Still 3">
-            <img src="src/images/stills/3.jpg" width="700" height="400" alt="Top Gun Still 4">
+        <div class="crew-container">
+            <div class="crew-item">
+                <span class="crew-label">Director</span>
+                <span class="crew-name"></span><a href="director.html">Joseph Kosinski</a></span>
+            </div>
+            <div class="crew-item">
+                <span class="crew-label">Writers</span>
+                <span class="crew-name">Peter Craig &middot; Noah Baumbach</span>
+            </div>
         </div>
 
+        <br>
+
+        <h2>Stills</h2>
+        <div class="stills">
+            <img src="src/images/stills/1.jpeg" alt="Top Gun Still 1">
+            <img src="src/images/stills/2.webp" alt="Top Gun Still 2">
+            <img src="src/images/stills/3.jpg" alt="Top Gun Still 3">
+            <img src="src/images/stills/3.jpg" alt="Top Gun Still 4">
+        </div>
+
+        <h2>Trivia</h2>
         <div class="trivia">
-            <h1>Trivia</h1>
             <ul>
                 <li>Tom Cruise met with Ridley Scott to see if he would be interested in directing this movie, as his brother, Tony Scott, 
                     had directed the original film. Scott, who had previously directed Cruise in Legend (1985), politely declined. 
@@ -98,28 +105,36 @@
             </ul>
         </div>
 
-        <div class="more-like-this">
-            <h1>More Like This</h1>
+        <h1>More Like This</h1>
+
+        <div class="recommendation">
 
             <div class="movie-card">
-                <a href="movie.html">
-                    <img src="src/images/pulp.jpeg" width="200" height="300" alt="Pulp Fiction Poster">
-                    <h3>Pulp Fiction</h3>
-                </a>
-                <h3>
-                    Directed by: <span class="movie-detail"> <a href="director.html">Quentin Tarentino</a></span>
-                </h3>
+                <div class="image-container">
+                    <a href="movie.html">
+                        <img src="src/images/pulp.jpeg" alt="Pulp Fiction Poster">
+                    </a>
+                </div>
+                <div class="info-container">
+                    <div class="movie-name">Pulp Fiction</div>
+                    <hr>
+                    <div class="director-name">Quentin Tarentino</div>
+                </div>
             </div>
 
             <div class="movie-card">
-                <a href="movie.html">
-                    <img src="src/images/starwars.jpeg" width="200" height="300" alt="Star Wars Poster">
-                    <h3>Star Wars</h3>
-                </a>
-                <h3>
-                    Directed by: <span class="movie-detail"> <a href="director.html">George Lucas</a></span>
-                </h3>
+                <div class="image-container">
+                    <a href="movie.html">
+                        <img src="src/images/starwars.jpeg" alt="Star Wars Poster">
+                    </a>
+                </div>
+                <div class="info-container">
+                    <div class="movie-name">Star Wars</div>
+                    <hr>
+                    <div class="director-name">George Lucas</div>
+                </div>
             </div>
+
         </div>
     </body>
 

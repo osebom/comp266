@@ -4,14 +4,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Actors Page</title>
+        <link rel="stylesheet" href="css/movie_style.css">
     </head>
 
     <body>
 
-        <form id="form"> 
-            <input type="search" id="query" name="q" placeholder="Search...">
-            <button>Search</button>
-        </form>
+        <div class ="search-container">
+            <form id="form"> 
+                <input type="search" id="query" name="q" placeholder="Search...">
+                <button>Search</button>
+            </form>
+        </div>
 
         <ul class="nav">
             <li><a href="homepage.html">Home</a></li>
@@ -22,33 +25,39 @@
 
         <h1>Actors</h1>
 
-        <form id="form"> 
-            <input type="search" id="query" name="q" placeholder="Search for actors...">
-            <button>Search</button>
-        </form>
-
-        <h3>Filters</h3>
-
         <!-- Control buttons -->
-        <div id="myBtnContainer">
-            <button class="btn"> Alphabetical</button>
-            <button class="btn">Popularity</button>
+        <div class="sort-container">
+            <h2>Sort</h2>
+            <div class="sort-button">
+                <button>Alphabetically</button>
+            </div>
+            <div class="sort-button">
+                <button>By Popularity</button>
+            </div>
         </div>
 
+
         <div class="actors">
-            <div class="cast-card">
-                <img src="src/actors/tomcruise.jpg" style="width: 100px;" alt="Tom Cruise Image">
-                <h3><a href="actor.html">Tom Cruise</a></h3>
+
+            <div class="card">
+                <a href="actor.html">
+                    <img class="actor" src="src/actors/therock.jpeg" alt="Tom Cruise Poster">
+                    <h3>The Rock</h3>
+                </a>
             </div>
 
-            <div class="cast-card">
-                <img src="src/actors/therock.jpeg" style="width: 100px;" alt="Dwayne Johnson Image">
-                <h3><a href="actor.html">Dwayne Johnson</a></h3>
+            <div class="card">
+                <a href="">
+                    <img class="actor" src="src/actors/milesteller.jpg" alt="Miles Teller Image"/>
+                    <h3>Miles Teller</h3>
+                </a>
             </div>
 
-            <div class="cast-card">
-                <img src="src/actors/jlo.jpeg" alt="Jennifer Lawrence Image" style="width: 100px;">
-                <h3><a href="actor.html">Jennifer Lawrence</a></h3>
+            <div class="card">
+                <a href="">
+                    <img class="actor" src="src/actors/jlo.jpeg" alt="Val Kilmer Image"/>
+                    <h3>Jennifer Lawrence</h3>
+                </a>
             </div>
         </div>
     </body>

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
 
-        <form id="form"> 
-            <input type="search" id="query" name="q" placeholder="Search...">
-            <button>Search</button>
-        </form>
+        <div class ="search-container">
+            <form id="form"> 
+                <input type="search" id="query" name="q" placeholder="Search...">
+                <button>Search</button>
+            </form>
+        </div>
 
         <ul class="nav">
             <li><a href="actors.html">Actors</a></li>
@@ -19,7 +23,7 @@
         </ul>
 
         <div class="trailer">
-            <video width="600px" height="600px" controls="controls">
+            <video width="800" height="400" controls="controls">
                 <source src="src/videos/oppenheimar.mp4" type="video/mp4" alt="Oppenheimar Trailer"/>
             </video>
         </div>
@@ -27,13 +31,13 @@
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
-            <img class="poster" src="src/images/mission.jpg" width="200" height="300" alt="Mission Impossible Poster"/>
-            <img class="poster" src="src/images/bb.jpeg" width="200" height="300" alt="Mission Impossible Poster"/>
-            <img class="poster" src="src/images/spiderverse.jpeg" width="200" height="300" alt="Across the Spider Verse Poster"/>
-            <img class="poster" src="src/images/moonlight.jpeg" width="200" height="300" alt="Moonlight Poster"/>
-            <img class="poster" src="src/images/bp.jpeg" width="200" height="300" alt="Black Panther Poster"/>
-            <img class="poster" src="src/images/blackkklans.jpeg" width="200" height="300" alt="Blackkklans Man Poster"/>
-            <img class="poster" src="src/images/flash.webp" width="200" height="300" alt="The Flash Poster"/>
+            <img class="poster" src="src/images/mission.jpg" alt="Mission Impossible Poster"/>
+            <img class="poster" src="src/images/bb.jpeg" alt="Mission Impossible Poster"/>
+            <img class="poster" src="src/images/spiderverse.jpeg" alt="Across the Spider Verse Poster"/>
+            <img class="poster" src="src/images/moonlight.jpeg" alt="Moonlight Poster"/>
+            <img class="poster" src="src/images/bp.jpeg" alt="Black Panther Poster"/>
+            <img class="poster" src="src/images/blackkklans.jpeg" alt="Blackkklans Man Poster"/>
+            <img class="poster" src="src/images/flash.webp" alt="The Flash Poster"/>
 
         </div>
 
@@ -43,32 +47,32 @@
 
             <div class="movie-card">
                 <a href="movie.html">
-                    <img src="src/images/pulp.jpeg" alt="Pulp Fiction Poster" width="200" height="300">
+                    <img src="src/images/pulp.jpeg" alt="Pulp Fiction Poster">
                     <h3>Pulp Fiction</h3>
                 </a>
-                <h3>
-                    Directed by: <span class="movie-detail"> <a href="director.html">Quentin Tarentino</a></span>
-                </h3>
+                <h4>
+                    Director: <span class="movie-detail"> <a href="director.html">Quentin Tarentino</a></span>
+                </h4>
             </div>
 
             <div class="movie-card">
                 <a href="movie.html">
-                    <img src="src/images/starwars.jpeg" alt="Star Wars Poster" width="200" height="300">
+                    <img src="src/images/starwars.jpeg" alt="Star Wars Poster">
                     <h3>Star Wars</h3>
                 </a>
-                <h3>
-                    Directed by: <span class="movie-detail"> <a href="director.html">George Lucas</a></span>
-                </h3>
+                <h4>
+                    Director: <span class="movie-detail"> <a href="director.html">George Lucas</a></span>
+                </h4>
             </div>
 
             <div class="movie-card">
                 <a href="movie.html">
-                    <img src="src/images/topgun.png" alt="Top Gun Poster" width="200" height="300">
+                    <img src="src/images/topgun.png" alt="Top Gun Poster">
                     <h3>Top Gun Maverick</h3>
                 </a>
-                <h3>
-                    Directed by: <span class="movie-detail"> <a href="director.html">Joseph Kosinski</a></span>
-                </h3>
+                <h4>
+                    Director: <span class="movie-detail"> <a href="director.html">Joseph Kosinski</a></span>
+                </h4>
             </div>
 
         </div>
