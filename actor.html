@@ -114,6 +114,57 @@
 
         <br>
 
+        <h1>Movies</h1>
+
+        <div id="filter">
+            Genres
+            <select id="genreSelect">
+                <option value="all">All</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="thriller">Thriller</option>
+                <option value="drama">Drama</option>
+                <!--... Add other genres ...-->
+            </select>
+        </div>
+
+        <div class="movie-list">
+
+            <a href="movie.html" class="filterDiv" data-genre="action" data-year="1998">
+                <img src="src/images/topgun.png" alt="Top Gun Poster" class="movie-poster">
+                <span class="movie-title">Top Gun</span>
+                <span class="movie-genre"></span>
+            </a>
+
+            <a href="movie.html" class="filterDiv" data-genre="action" data-year="2023">
+                <img src="src/images/mission.jpg" alt="Mission Impossible Poster" class="movie-poster">
+                <span class="movie-title">Mission Impossible 6</span>
+                <span class="movie-genre"></span>
+            </a>
+
+            <a href="movie.html" class="filterDiv" data-genre="action" data-year="2023">
+                <img src="src/images/flash.webp" alt="The Flash Poster" class="movie-poster">
+                <span class="movie-title">The Flash</span>
+                <span class="movie-genre"></span>
+            </a>
+
+            <a href="movie.html" class="filterDiv" data-genre="thriller" data-year="1999">
+                <img src="src/images/pulp.jpeg" alt="Pulp Fiction Poster" class="movie-poster">
+                <span class="movie-title">Pulp Fiction</span>
+                <span class="movie-genre"></span>
+            </a>
+
+            <a href="movie.html" class="filterDiv" data-genre="sci-fi" data-year="2003">
+                <img src="src/images/spiderman.webp" alt="Spider-Man Poster" class="movie-poster">
+                <span class="movie-title">Spider-Man</span>
+                <span class="movie-genre"></span>
+            </a>
+
+        </div>
+    
+        <script src="scripts/slideshow.js"></script>
+
         <h1>Photos</h1>
         <div class="stills">
             <img src="src/images/stills/1.jpeg" width="700" height="400" alt="Actor Still 1">
