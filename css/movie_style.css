@@ -147,18 +147,40 @@ table{
     color: #ffffff;
 }
 
+/*Stills*/
 .stills {
     background-color: #282c34;
     border-radius: 8px;
     /*width: 300px;*/
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%; /* This controls the width of the div */
+    margin: 0 auto; /* This centers the div horizontally */
 }
 
 .stills img{
-    width: 600px;
-    height: 300px;
+    width: 700px;
+    height: 400px;
 }
 
+.stills button {
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.left-button {
+    left: 10px;
+}
+
+.right-button {
+    right: 10px;
+}
+
+/*Trivia*/
 .trivia {
     width: 70%;
     color: #000000;
@@ -173,8 +195,7 @@ table{
     color: #ffffff;
 }
 
-
-/*Recimmendations*/
+/*Recommendations*/
 .recommendation {
     display: flex;
     /*justify-content: center;*/
@@ -407,7 +428,11 @@ footer{
     color:rgb(189, 189, 189)
 }
 
-/* Actor's Page Movies */
+.still-image {
+    display:none;
+}
+
+/* Movies Filters on actor.html */
 .filterDiv {
     border: 1px solid #ccc;
     padding: 10px;
