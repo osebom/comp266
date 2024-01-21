@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <title>Home Page</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -29,17 +30,7 @@
         </div>
 
         <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <img class="poster" src="src/images/mission.jpg" alt="Mission Impossible Poster"/>
-            <img class="poster" src="src/images/bb.jpeg" alt="Mission Impossible Poster"/>
-            <img class="poster" src="src/images/spiderverse.jpeg" alt="Across the Spider Verse Poster"/>
-            <img class="poster" src="src/images/moonlight.jpeg" alt="Moonlight Poster"/>
-            <img class="poster" src="src/images/bp.jpeg" alt="Black Panther Poster"/>
-            <img class="poster" src="src/images/blackkklans.jpeg" alt="Blackkklans Man Poster"/>
-            <img class="poster" src="src/images/flash.webp" alt="The Flash Poster"/>
-
-        </div>
+        <div class="slideshow-container"></div>
 
         <h1>Popular Movies</h1>
 
@@ -76,10 +67,44 @@
             </div>
 
         </div>
+
+        <script>
+            $(document).ready(function() {
+                $.getJSON("data/moviedb.json", function(movies) {
+                    var container = $(".slideshow-container");
+
+                    for (var i = 0; i < 7; i++) {
+                        var movie = movies[i];
+                        if (movie) {
+                            var link = $('<a href="movie_template.html?movieId=' + movie['data-movie-id'] + '"></a>');
+                            var img = $('<img class="poster" alt="' + movie.title + ' Poster"/>');
+                            img.attr('src', movie['poster-source']);
+                            link.append(img);
+                            container.append(link);
+                        }
+                    }
+                });
+            });
+        </script>
+
     </body>
 
     <footer>
         ©September 2023 OJ Onyeagwu
     </footer>
+
+    <!-- jQuery Script for Hover Effect -->
+    <script>
+        $(document).ready(function() {
+            $('.nav li a').hover(
+                function() {
+                    $(this).css('color', 'red'); // Change to red on hover
+                }, 
+                function() {
+                    $(this).css('color', ''); // Revert to original color on mouse out
+                }
+            );
+        });
+    </script>
 
 </html>

@@ -92,3 +92,15 @@ h3{
 footer{
     color:rgb(189, 189, 189)
 }
+
+.slideshow-container {
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  
+.slideshow-container img {
+    width: auto; /* Adjust based on your image sizes */
+    height: 300px; /* Adjust based on your image sizes */
+    flex-shrink: 0; /* Prevents images from shrinking */
+}

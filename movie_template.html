@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="css/movie_style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div class ="search-container">
+        <form id="form"> 
+            <input type="search" id="query" name="q" placeholder="Search...">
+            <button>Search</button>
+        </form>
+    </div>
+
+    <ul class="nav">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="actors.html">Actors</a></li>
+        <li><a href="directors.html">Directors</a></li>
+        <li><a href="genres.html">Genres</a></li>
+    </ul>
+
+    <br>
+
+    <div class="intro-card">
+        <img id="moviePoster" src="" alt="" style="width: 200px;">
+
+        <!-- Synopsis container -->
+        <div id="movieSynopsis" class="synopsis-container">
+            <h1 id="movieTitle">Movie Title</h1>
+            <h2>Synopsis</h2>
+            <p id="synopsisText">Loading synopsis...</p>
+        </div>
+    </div>
+
+    <br>
+
+    <h2>Cast</h2>
+
+    <div class="cast">
+
+        <div class="card">
+            <a href="actor.html">
+                <img class="actor" src="src/actors/tomcruise.jpg" alt="Tom Cruise Poster">
+                <h3>Tom Cruise</h3>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="">
+                <img class="actor" src="src/actors/milesteller.jpg" alt="Miles Teller Image"/>
+                <h3>Miles Teller</h3>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="">
+                <img class="actor" src="src/actors/valkilmer.jpg" alt="Val Kilmer Image"/>
+                <h3>Val Kilmer</h3>
+            </a>
+        </div>
+
+    </div>
+
+    <h2>Crew</h2>
+
+    <div class="crew-container">
+        <div class="crew-item">
+            <span class="crew-label">Director</span>
+            <span id="movieDirector" class="crew-name"></span><a href="director.html"></a></span>
+        </div>
+        <div class="crew-item">
+            <span class="crew-label">Writers</span>
+            <span id="movieWriters" class="crew-name"></span>
+        </div>
+    </div>
+
+    <br>
+
+    <h2>Stills</h2>
+    <div class="stills">
+        <img class="still-image" src="src/images/stills/1.jpeg" alt="Top Gun Still 1">
+        <img class="still-image" src="src/images/stills/2.webp" alt="Top Gun Still 2">
+        <img class="still-image" src="src/images/stills/3.jpg" alt="Top Gun Still 3">
+        <img class="still-image" src="https://i.guim.co.uk/img/media/19ddd8e0bafede6b9217bf9dcd634e25b3b91cb3/326_0_2448_1469/master/2448.jpg?width=1200&quality=85&auto=format&fit=max&s=eb539d125aba01b1a45b24105b1375ef" alt="Top Gun Still 4">
+
+        <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script src="scripts/slide_show.js"></script>
+
+    <h2>Trivia</h2>
+    <div class="trivia">
+        <ul id="triviaList">
+            <!-- Trivia items will be dynamically inserted here -->
+        </ul>
+    </div>
+
+    <br>
+    
+    <script>
+        $(document).ready(function() {
+            var movieId = new URLSearchParams(window.location.search).get('movieId');
+            
+            $.getJSON("data/moviedb.json", function(movies) {
+                var selectedMovie = movies.find(m => m['data-movie-id'] === movieId);
+                if (selectedMovie) {
+                    $('#moviePoster').attr('src', selectedMovie['poster-source']).attr('alt', selectedMovie.title + ' Poster');
+                    $('#movieTitle').text(selectedMovie.title);
+                    $('#synopsisText').text(selectedMovie.synopsis);
+                    $('#movieDirector').text(selectedMovie.director);
+                    $('#movieWriters').text(selectedMovie.writers.join(', '));
+
+                    $('#triviaList').empty();
+                    selectedMovie.trivia.forEach(function(triviaItem) {
+                        $('#triviaList').append($('<li>').text(triviaItem));
+                    });
+                } else {
+                    $('#moviePoster').attr('src', 'path/to/default-image.png').attr('alt', 'Default Image');
+                    $('#movieTitle').text('Movie Not Found');
+                    $('#synopsisText').text('Details for the selected movie are not available.');
+                    $('#movieDirector').text('N/A');
+                    $('#movieWriters').text('N/A');
+                    $('#triviaList').empty().append($('<li>').text('No trivia available.'));
+                }
+            });
+        });
+    </script>
+</body>
+<footer>
+    ©September 2023 OJ Onyeagwu
+</footer>
+</html>

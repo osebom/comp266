@@ -473,3 +473,9 @@ select {
 .movie-list a {
     text-decoration: none;
 }
+
+.movie-synopsis {
+    color: #eee;
+}
+
+

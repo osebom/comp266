@@ -1,0 +1,214 @@
+[
+    {
+      "title": "Top Gun: Maverick",
+      "release_year": 2022,
+      "director": "Joseph Kosinski",
+      "genre": "drama",
+      "synopsis": "More than 30 years after graduating from Top Gun, Captain Pete 'Maverick' Mitchell confronts his past while training a group of younger Top Gun graduates for a dangerous mission.",
+      "main_cast": ["Tom Cruise", "Miles Teller", "Jennifer Connelly", "Jon Hamm", "Glen Powell", "Monica Barbaro", "Lewis Pullman", "Ed Harris", "Val Kilmer"],
+      "writers": ["Ehren Kruger", "Eric Warren Singer"],
+      "trivia": [
+        "The Pentagon assisted in the production, granting access to Naval facilities and aircraft.",
+        "Tom Cruise, despite being a pilot, was not allowed to fly Navy jets.",
+        "The original 'Top Gun' movie increased Navy enlistment."
+      ],
+      "similar_movies": ["Top Gun", "Iron Eagle", "Flight of the Intruder"],
+      "poster-source": "src/images/topgun.png",
+      "data-movie-id": "top-gun-maverick",
+      "populairty":9
+    },
+    {
+      "title": "Mission: Impossible: Dead Reckoning Part One",
+      "release_year": 2023,
+      "director": "Christopher McQuarrie",
+      "genre": "action",
+      "synopsis": "Ethan Hunt embarks on a mission involving an AI and a global race to retrieve a crucial piece of technology.",
+      "main_cast": ["Tom Cruise", "Hayley Atwell", "Ving Rhames", "Simon Pegg", "Rebecca Ferguson"],
+      "writers": ["Christopher McQuarrie"],
+      "trivia": [
+        "Filming was halted due to the COVID-19 pandemic but resumed later.",
+        "It is one of the most expensive films ever made with a budget of $291 million.",
+        "The film is the first in the series since Mission: Impossible 2 not to involve J. J. Abrams."
+      ],
+      "similar_movies": ["Mission: Impossible – Fallout", "Mission: Impossible – Rogue Nation", "Jack Reacher"],
+      "poster-source": "src/images/mission.jpg",
+      "data-movie-id": "mission-impossible",
+      "populairty":8.5
+    },
+
+    {
+        "title": "Spider-Man: Across the Spider-Verse",
+        "release_year": 2023,
+        "director": "Joaquim Dos Santos",
+        "writers": ["Phil Lord", "Christopher Miller", "David Callaham"],
+        "main_cast": ["Shameik Moore", "Hailee Steinfeld", "Brian Tyree Henry", "Lauren Vélez", "Jake Johnson"],
+        "genre": "sci-fi",
+        "synopsis": "Miles Morales returns in the next chapter of the Spider-Verse saga, an epic adventure that transports Brooklyn's full-time, friendly neighborhood Spider-Man across the Multiverse to join forces with Gwen Stacy and a new team of Spider-People to face off with a villain more powerful than anything they have ever encountered.",
+        "trivia": [
+            "Sequel to 'Spider-Man: Into the Spider-Verse' set in a shared multiverse called the Spider-Verse.",
+            "Features a different visual style for each of the six universes visited by the characters.",
+            "Received largely positive reviews and set several box office records."
+        ],
+        "similar_movies": ["Spider-Man: Into the Spider-Verse", "The LEGO Movie", "Big Hero 6"],
+        "poster-source": "src/images/spiderverse.jpeg",
+        "data-movie-id": "across-the-spiderverse",
+        "populairty":9
+    },
+
+    {
+        "title": "Moonlight",
+        "release_year": 2016,
+        "director": "Barry Jenkins",
+        "writers": ["Barry Jenkins", "Tarell Alvin McCraney"],
+        "main_cast": ["Trevante Rhodes", "Mahershala Ali", "Naomie Harris", "Ashton Sanders", "Jharrel Jerome"],
+        "genre": "drama",
+        "synopsis": "The film presents three stages in the life of the main character: his childhood, adolescence, and early adult life. It explores the difficulties he faces with his sexuality and identity, including the physical and emotional abuse he endures growing up.",
+        "trivia": [
+            "Based on Tarell Alvin McCraney's unpublished semi-autobiographical play 'In Moonlight Black Boys Look Blue'.",
+            "Won the Academy Award for Best Picture.",
+            "Joi McMillon became the first black woman to be nominated for an editing Oscar."
+        ],
+        "budget": "$1.5 million",
+        "box_office": "$65.2 million",
+        "running_time": "111 minutes",
+        "similar_movies": ["If Beale Street Could Talk", "A24 Films", "Independent Cinema"],
+        "poster-source": "src/images/moonlight.jpeg",
+        "data-movie-id": "moonlight",
+        "populairty":8
+    },
+
+    {
+      "title": "Blue Beetle",
+      "release_year": 2023,
+      "director": "Ángel Manuel Soto",
+      "genre": "sci-fi",
+      "synopsis": "Jaime Reyes, a recent college graduate, becomes the host of an ancient alien relic known as the Scarab, granting him superpowers.",
+      "main_cast": ["Xolo Maridueña", "Adriana Barraza", "Damián Alcázar", "Susan Sarandon", "George Lopez"],
+      "writers": ["Gareth Dunnet-Alcocer"],
+      "trivia": [
+        "Originally planned for HBO Max, it was switched to a theatrical release.",
+        "The film became the most streamed film on HBO Max despite bombing at the box office.",
+        "Filming locations included Decatur, Georgia; El Paso, Texas; and Puerto Rico."
+      ],
+      "similar_movies": ["The Flash", "Aquaman", "Shazam!"],
+      "poster-source": "src/images/bb.jpeg",
+      "data-movie-id": "blue-beetle",
+      "populairty":6
+    },
+
+    {
+        "title": "Black Panther",
+        "release_year": 2018,
+        "director": "Ryan Coogler",
+        "genre": "sci-fi",
+        "synopsis": "After his father's death, T'Challa returns home to Wakanda to inherit his throne. However, a powerful enemy related to his family threatens to attack his nation.",
+        "main_cast": [ "Chadwick Boseman",
+                        "Michael B. Jordan",
+                        "Lupita Nyong'o",
+                        "Danai Gurira",
+                        "Martin Freeman"]
+                    ,
+        "writers": ["Ryan Coogler", "Joe Robert Cole"],
+        "trivia": [
+            "First Marvel Studios film with a Black director and predominantly Black cast.",
+            "Broke numerous box office records and was noted for its cultural significance.",
+            "First superhero film to receive a Best Picture nomination at the Academy Awards."
+        ],
+        "similar_movies": ["The Flash", "Iron Man", "Shazam!"],
+        "poster-source": "src/images/bp.jpeg",
+        "data-movie-id": "black-panther",
+        "populairty":9.5
+      },
+
+      {
+        "title": "Blackkkans Man",
+        "release_year": 2018,
+        "director": "Spike Lee",
+        "genre": "drama",
+        "synopsis": "Set in the 1970s in Colorado Springs, the film follows Ron Stallworth, the first African-American detective in the city's police department, as he sets out to infiltrate and expose the local Ku Klux Klan chapter.",
+        "main_cast": ["John David Washington",
+                    "Adam Driver",
+                    "Laura Harrier",
+                    "Topher Grace"
+                    ],
+        "writers": ["Charlie Wachtel", "David Rabinowitz", "Kevin Willmott", "Spike Lee"],
+        "trivia": [
+            "Based on a true story, but set in an earlier time period than the actual events.",
+            "The true identity of Ron Stallworth's partner remains secret; in the memoir, he was not Jewish, and there was a second officer involved.",
+            "Harry Belafonte's cameo in the film was his last feature film role before his death in April 2023."
+        ],
+        "similar_movies": ["Get Out", "Inside Man", "Do the Right Thing"],
+        "poster-source": "src/images/blackkklans.jpeg",
+        "data-movie-id": "blakkkans-man",
+        "populairty":8
+      },
+
+      {
+        "title": "The Flash",
+        "release_year": 2023,
+        "director": "Andy Muschietti",
+        "genre": "sci-fi",
+        "synopsis": "Barry Allen/The Flash travels back in time to prevent his mother's death, resulting in him being stranded in an alternate past.",
+        "main_cast": [
+            "Ezra Miller",
+            "Sasha Calle",
+            "Michael Shannon",
+            "Ron Livingston",
+            "Michael Keaton"
+            ],
+        "writers": ["Christina Hodson", "John Francis Daley", "Jonathan Goldstein"],
+        "trivia": [
+            "13th installment in the DC Extended Universe (DCEU).",
+            "Influenced by the comic book storyline 'Flashpoint'.",
+            "Premiered at Grauman's Chinese Theatre in Hollywood."
+        ],
+        "similar_movies": ["Justice League", "Batman v Superman: Dawn of Justice", "Wonder Woman"],
+        "poster-source": "src/images/flash.webp",
+        "data-movie-id": "the-flash",
+        "populairty":7.5
+      },
+
+      {
+        "title": "Star Wars: Return of the Jedi",
+        "release_year": 1983,
+        "director": "Richard Marquand",
+        "genre": "sci-fi",
+        "synopsis": "In the epic conclusion of the original Star Wars trilogy, the Rebel Alliance launches a final stand against the Galactic Empire. Meanwhile, Luke Skywalker confronts Darth Vader in a final duel against the backdrop of the Death Star's destruction.",
+        "main_cast": [
+            "Mark Hamill", "Harrison Ford", "Carrie Fisher","Billy Dee Williams"
+            ],
+        "writers": ["Lawrence Kasdan", "George Lucas"],
+        "trivia": [
+            "Introduced iconic characters like the Ewoks.",
+            "Notable for its groundbreaking special effects and conclusion of the Luke Skywalker-Darth Vader storyline.",
+            "The final film in the original Star Wars trilogy."
+        ],
+        "similar_movies": ["Star Wars: The Empire Strikes Back", "Star Wars: A New Hope", "The Last Starfighter"],
+        "poster-source": "src/images/starwars.jpeg",
+        "data-movie-id": "star-wars-the-return-of-the-jedi",
+        "populairty":8.5
+      },
+
+      {
+        "title": "Pulp Fiction",
+        "release_year": 1994,
+        "director": "Quentin Tarantino",
+        "genre": "drama",
+        "synopsis": "An intertwining collection of stories revolving around two hitmen, a boxer, a gangster's wife, and a pair of diner bandits, all culminating in violence and redemption. The film is noted for its eclectic dialogue, ironic mix of humor and violence, and non-linear storyline.",
+        "main_cast": [
+            "John Travolta", "Uma Thurman", "Samuel L. Jackson"
+            ],
+        "writers": ["Quentin Tarantino", "Roger Avary"],
+        "trivia": [
+            "Known for reviving John Travolta's career.",
+            "Won the Palme d'Or at the 1994 Cannes Film Festival.",
+            "Influential in the development of independent cinema in the 1990s."
+        ],
+        "similar_movies": ["Reservoir Dogs", "Jackie Brown", "The Big Lebowski"],
+        "poster-source": "src/images/pulp.jpeg",
+        "data-movie-id": "pulp-fiction",
+        "populairty":7.5
+      }
+
+]
+  
